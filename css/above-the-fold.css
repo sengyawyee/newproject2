@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'brandon_grotesque';
+    src: url('../fonts/brandon_reg-webfont.woff2') format('woff2'),
+         url('../fonts/brandon_reg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'brandon_grotesque';
+    src: url('../fonts/brandon_thin-webfont.woff2') format('woff2'),
+         url('../fonts/brandon_thin-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'brandon_grotesque';
+    src: url('../fonts/brandon_light-webfont.woff2') format('woff2'),
+         url('../fonts/brandon_light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'brandon_grotesque';
+    src: url('../fonts/brandon_med-webfont.woff2') format('woff2'),
+         url('../fonts/brandon_med-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'brandon_grotesque';
+    src: url('../fonts/brandon_bld-webfont.woff2') format('woff2'),
+         url('../fonts/brandon_bld-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'brandon_grotesqueblack';
+    src: url('../fonts/brandon_blk-webfont.woff2') format('woff2'),
+         url('../fonts/brandon_blk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body { background-color: #EFE9E5; }
+.overlapblackbg { z-index: 199; }
+.header {position: absolute;width: 100%;top: 0;left: 0;z-index: 200;-webkit-transition: all .3s ease-in-out;-o-transition: all .3s ease-in-out;transition: all .3s ease-in-out;}
+.header .container { position: relative; }
+.header .logo {display: inline-block;border-bottom-left-radius: 8px;border-bottom-right-radius: 8px;width: 110px;overflow: hidden;position: absolute;z-index: 10;left: 15px;top: -45px;}
+.header .logo a {display: inline-block;padding: 10px 12px;background-color: #55403d;}
+.header .logo.mobile {width: 165px;text-align: center;position: relative;margin: 0 auto;left: 0;-webkit-transition: all .5s ease-in-out;-o-transition: all .5s ease-in-out;transition: all .5s ease-in-out;}
+.header a.logo-sm { display: none; }
+.header .mainNavi .bookingForm { opacity: 0; display: none; }
+.header.smallHeader {background-color: #634c49;}
+.header.smallHeader .logo {width: 150px;}
+.header.smallHeader a.logo-sm {display: block;background-color: transparent;padding-top: 22px;}
+.header.smallHeader .sg a.logo-sm {padding-top: 20px;}
+.header.smallHeader a.logo-lg { display: none; }
+.header.smallHeader .main-menu {padding-top: 9px;}
+.header.smallHeader .menuList, .header.smallHeader .bookStay { display: none; }
+.header.smallHeader .mainNavi .bookingForm {display: block;opacity: 1;margin-top: 15px;}
+.header.smallHeader .mainNavi {max-width: 100%;padding-right: 155px;text-align: right;}
+.header.smallHeader .mainNavi .form .form-control {height: 44px;background-color: #8d7875;}
+.top-menu {background-color: #55403D;padding: 8px 0;text-transform: uppercase;font-size: 9px; }
+.top-menu ul {margin: 5px 0;}
+.top-menu ul > li { position: relative;}
+.top-menu ul > li label {color: rgba(255,255,255,0.3);display: inline-block;margin: 0;font-weight: bold;}
+.top-menu ul > li .dropdown { display: inline-block; }
+.top-menu ul > li .dropdown button { background: none; border: 0; text-transform: uppercase; color: #fff; letter-spacing: 1px; }
+.top-menu ul > li .dropdown button .fa { margin-left: 5px; color:#f2c164; }
+.top-menu .dropdown-menu {border-radius: 0;background-color: #45312a;border: 0;box-shadow: none;}
+.top-menu .dropdown-menu > li > a { color: #fff; font-size: 12px; }
+.top-menu .dropdown-menu > li > a:focus, .top-menu .dropdown-menu > li > a:hover { background: none; color: #F2C163; }
+.top-left { float: left; }
+.top-right { float: right; }
+.top-menu .top-right ul > li {padding:0 10px; line-height:1;}
+.top-menu .top-right ul li:first-child {border-right:1px solid rgba(255,255,255,0.2)}
+.top-menu .top-right ul li a {color:#fff; letter-spacing:1px;}
+.topBannerWrapper.static { padding-top: 45px; }
+.manage-booking img {padding-left:5px;}
+.animated-arrow {padding: 20px 45px 16px 0px;margin: 0;-webkit-transition: none;-moz-transition: none;-o-transition: none;-ms-transition: none;transition: none;}
+.animated-arrow span:before { top: -12px; }
+.animated-arrow span:after { bottom: -12px; }
+.animated-arrow span, .animated-arrow span:before, .animated-arrow span:after { width: 45px; height: 1px; }
+.wsoffcanvasopener .animated-arrow {position: fixed;top: 30px;left: 325px;margin: 0;background-color: rgba(0,0,0,0.35);padding: 0;width: 30px;height: 30px;}
+.wsoffcanvasopener .animated-arrow span { width: 14px; }
+.wsoffcanvasopener .animated-arrow span:before, .wsoffcanvasopener .animated-arrow span:after {background-color: #ffffff;width: 14px;height: 2px;}
+.wsoffcanvasopener .animated-arrow span:before {top: 15px;left: 8px;}
+.wsoffcanvasopener .animated-arrow span:after {top: 15px;left: 8px;}
+.wsmenucontainer.wsoffcanvasopener {margin-left: 0;}
+.wsmenu {width: 375px;left: -375px;background-color: #55403d !important;}
+.wsmenu > .wsmenu-list { margin: 0 15px; height: auto; }
+.wsmenu > .wsmenu-list > li {width: 100%;padding: 0;/*height: 50px;*/}
+.wsmenu > .wsmenu-list > li > a {font-size: 12px; color: #fff;text-transform: uppercase;padding: 10px 0;border-bottom: 2px solid #4a3835;}
+.wsmenu > .wsmenu-list > li > a:hover, .wsmenu-list > li:hover > a { background: none !important;color: #F2C163; }
+.wsmenu-list .logoforwhite { width: 40px; height: 40px; }
+.sideNavi-wrapper {position: relative;}
+.sideNavi-wrapper > .wrapper {display:none;}
+.sideNavi-wrapper .bookingBtn.btn-default {position: absolute;top: 0;right: 0;}
+.sideNavi { padding: 25px 0; }
+.sideNavi ul > li .dropdown-wrapper {padding: 12px 0;border-bottom: 2px solid #4a3835;}
+.sideNavi ul > li label {color: #8E7875;display: inline-block;margin: 0;font-weight: 500;text-transform: uppercase;font-size: 11px;margin-right: 5px;}
+.sideNavi ul > li .dropdown { display: inline-block; }
+.sideNavi button {background: none;border: 0;text-transform: uppercase;color: #fff;letter-spacing: 1px;font-size: 11px;padding: 0;}
+.sideNavi button:hover { color: #F2C163; }
+.sideNavi ul > li .selectTitle { font-size:  11px; }
+.sideNavi ul > li .selectTitle .fa { margin-left: 5px; color: #F2C163; }
+.sideNavi .twoCol button {float: left;text-align: left;height: 30px;}
+.sideNavi .twoCol #regBtn {width: 35%;}
+.sideNavi .twoCol #bkBtn {text-align: right;width: 65%;border-left: 2px solid #4a3835;}
+.sideNavi .twoCol #bkBtn .fa { font-size: 8px; display: inline-block; background-color: #8E7875; padding: 5px; border-radius: 50%; }
+.sideNavi .mobile-sub .wsmenu-submenu {background: #45312a;border: 0;}
+.sideNavi .mobile-sub .wsmenu-submenu li a {background: none !important;color: #fff;}
+.sideNavi .mobile-sub .wsmenu-submenu li a:hover { text-decoration: none; color: #F2C163; }
+.sideNavi .wsmenu-arrow { display: none; }
+.sideTop { color: #fff; }
+.sideTop .logoforwhite { float: left; }
+.sideTop .info-panel {float: left;margin-top: 8px;font-size: 11px;}
+.sideTop .info-panel .date-info {display: inline-block;padding: 0 15px;}
+.sideTop .info-panel #weather {display: inline-block;border-left: 1px solid rgba(255, 255, 255, 0.25);padding: 0 15px;line-height: 1;}
+.sideTop .info-panel #weather span.unit { display: inline-block; padding-right: 3px; }
+.form .form-control {background-color: transparent;border-radius: 2px;border: 1px solid #8d7573;font-size: 11px;color: #fff;}
+.form .form-control:focus { box-shadow: 0 0 10px rgba(255,255,255,0.3)}
+.form input::-webkit-input-placeholder { color: #ffffff; font-weight: 500; letter-spacing: 1px; }
+.form input:-moz-placeholder { color: #ffffff; font-weight: 500; letter-spacing: 1px; }
+.form input::-moz-placeholder { color: #ffffff; font-weight: 500; letter-spacing: 1px; }
+.form input:-ms-input-placeholder { color: #ffffff; font-weight: 500; letter-spacing: 1px; }
+.findBtn.btn-default {display: block;border-radius: 0;background-color: #45312a;border: 0;color: #fff;text-transform: uppercase;font-size: 11px;padding: 12px 15px;}
+.bookingBtn.btn-default {display: inline-block;border-radius: 0;background-color: #45312a;border: 0;color: #fff;text-transform: uppercase;font-size: 11px;padding: 15px 25px;}
+.ms-skin-default .ms-nav-next, .ms-skin-default .ms-nav-prev {background: none;background-color: rgba(103, 78, 75, 0.45);width: 50px;height: 50px;text-align: center;-webkit-transition: all .5s ease-in-out;-o-transition: all .5s ease-in-out;transition: all .5s ease-in-out;}
+.ms-skin-default .ms-nav-prev:before {content: "\f104";font: normal normal normal 22px/1 FontAwesome;color: #fff;line-height: 47px;}
+.ms-skin-default .ms-nav-next:before {content: "\f105";font: normal normal normal 22px/1 FontAwesome;color: #fff;line-height: 47px;}
+.ms-skin-default .ms-nav-next:hover, .ms-skin-default .ms-nav-prev:hover {background-color: #55403d;}
+.pageBanner {position: relative; background-size: cover; background-position: center; width: 100%;  }
+.pageBanner .pageTitle {text-align: center;width: 100%; padding:30px 0; background:#262626;z-index: 30;text-shadow: 0 0 10px rgba(0,0,0,0.5);margin: 0;}
+.pageBanner .pageTitle h1 {color: #F2C163;text-transform: uppercase; margin:0 0 15px; font-weight:bold; font-size:32px;}
+.go-back-btn {color:#fff; padding:16px 55px; border:1px solid #fff; border-radius:50px; font-size:12px; margin-top:20px; display:inline-block;}
+.pageBanner.md { padding-bottom: 40%;}
+.pageBanner.md:before { display: none; }
+.pageBanner .backBtn {position: absolute;color: #fff;top: 175px;left: 50%;-webkit-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);transform: translate(-50%,-50%);z-index: 10;padding: 10px;font-size: 12px;}
+.pageBanner .backBtn:before {content: "\f053";font: normal normal normal 12px/1 FontAwesome;position: relative;margin-right: 10px;border: 1px solid #fff;border-radius: 50%;width: 30px;height: 30px;text-align: center;line-height: 30px;display: inline-block;}
+.topBannerWrapper { background-color: #55403d; padding-top: 45px; }
+.progress-circle { display:inline-block; width:8px; height:8px; background:rgba(255,255,255,0.2);border-radius:50%;}
+.active .progress-circle{background:#fff;}
+.static-title-tag h4 {margin-top: -85px;z-index: 100;padding: 25px 0 15px;position: relative;background-color: #efe9e5;font-size: 14px;color: #F5CB76;}
+.staticpost h1 { font-size: 34px; }
+.staticpost .intro { font-size: 22px; }
+
+.newsletter label {color: #F2C163;letter-spacing: 2px;margin: 0;}
+.newsletter .form-group { position: relative; }
+.newsletter .form-control {font-size: 9px; height: 30px; color: #fff; border: 0;background: none;box-shadow: none;border-bottom: 2px solid #8E7875;border-radius: 0;width: 200px;padding: 4px 50px 4px 0;margin-left: 10px;}
+.newsletter a {color: #fff;font-size: 14px;position: absolute;top: 3px;right: 0;display: inline-block;z-index: 10;}
+.newsletter input::-webkit-input-placeholder { color: #ffffff; font-weight: bold; letter-spacing: 1px; }
+.newsletter input:-moz-placeholder { color: #ffffff; font-weight: bold; letter-spacing: 1px; }
+.newsletter input::-moz-placeholder { color: #ffffff; font-weight: bold; letter-spacing: 1px; }
+.newsletter input:-ms-input-placeholder { color: #ffffff; font-weight: bold; letter-spacing: 1px; }
+
+input, select {-webkit-appearance: none;-moz-appearance: none;}
+.booking-progression-wrapper ul {margin-bottom:0;}
+
+@media(max-width:991px) {
+    .pageBanner.md { padding-bottom: 50%;}
+    .staticpost h1 { font-size: 30px; }
+    .pageBanner .backBtn {top: 125px;}
+}
+
+@media(max-width: 767px) {
+	.container {max-width:500px;}
+    .header .main-menu { height: 60px}
+    .header .logo a {padding: 15px;background: none;}
+    .header .logo.sg a {padding: 10px 0;background: none;}
+    .header.smallHeader .logo a {padding: 12px 15px;background: none;}
+    .header.smallHeader .logo.sg a {/* padding: 0; */}
+    .header.smallHeader .animated-arrow { margin-top: 5px; }
+    .header.smallHeader .sideNavi-wrapper .bookingBtn { margin-top: 5px; }
+    .topBannerWrapper,.topBannerWrapper.static { padding-top: 0; }
+    .top-menu,.mainNavi { display: none; }
+    .header { background-color: #55403d; position:relative;}
+    .ms-skin-default .ms-nav-prev {left: 0;}
+    .ms-skin-default .ms-nav-next {right: 0;}
+    .content-wrapper { padding-top: 60px; }
+    .sideNavi-wrapper .bookingBtn {display:none;padding: 12px 15px;margin-top: 10px;}
+    .animated-arrow {margin-top: 10px;}
+    .animated-arrow span, .animated-arrow span:before, .animated-arrow span:after { width: 35px;}
+    .pageBanner .backBtn { top: 40px; }
+    .pageBanner.lg h1.pageTitle { font-size: 24px; top: 60%;}
+    .pageBanner.md { padding-bottom: 60%;}
+    .staticpost h1 { font-size: 24px; }
+    .staticpost .intro { font-size: 20px; }
+	.header .logo {top:0;}
+}
+@media(max-width: 375px) {
+    .wsmenu { width: 100%; }
+    .wsoffcanvasopener .animated-arrow { left: auto; right: 15px; }
+    .header .logo.mobile {width: 150px;}
+    .header .logo.sg.mobile {padding: 10px 0;}
+    .header .logo.sg a {padding: 5px 15px;}
+    .header.smallHeader .logo.sg a { padding: 0 15px;}
+    .ms-skin-default .ms-nav-next, .ms-skin-default .ms-nav-prev { width: 35px; height: 35px; }
+    .ms-skin-default .ms-nav-prev:before, .ms-skin-default .ms-nav-next:before { line-height: 35px; }
+    .pageBanner.lg { padding: 0; height: 200px; }
+    .pageBanner.md { padding: 0; height: 200px; }
+}
+
+@media (min-width:768px){
+    .header.smallHeader {top: -80px;background-color: #634c49;}
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+    .animated-arrow span, .animated-arrow span:before, .animated-arrow span:after { width: 35px;}
+    .header.smallHeader .animated-arrow, .header.smallHeader .sideNavi-wrapper .bookingBtn.btn-default { margin-top: 16px; }
+    .pageBanner.lg { padding-bottom: 0; height: 400px; }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .pageBanner .backBtn {top: 120px;}
+    .touch.ios .header.smallHeader .animated-arrow, .touch.ios .header.smallHeader .sideNavi-wrapper .bookingBtn.btn-default { margin-top: 16px; }
+    .touch.ios .header.smallHeader .mainNavi .bookingForm { display: none; }
+    .touch.ios .header.smallHeader .bookStay { display: block;}
+}
+
+@media(min-width:1200px){
+    .header.smallHeader .mainNavi .form { overflow: hidden; }
+    .header.smallHeader .mainNavi .form .form-control {width: 185px;}
+    .topBannerWrapper { padding-top: 0; }
+}
